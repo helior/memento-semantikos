@@ -15,7 +15,7 @@ MyClass.h
 
 @interface MyClass : NSObject
   -(void)myCoolPublicMethod:(NSString *)value1Name;
-  // [insert more public methods here]
+  // [define public methods here]
 @end
 ```
 
@@ -24,12 +24,14 @@ MyClass.m
 #import "MyClass.h"
 
 @interface MyClass()
-  [insert private instance properties here]
+  // [define private instance properties here]
+  // [define private methods here]
 @end
 
 @implementation MyClass
-  -(void)myCoolPublicMethod:(NSString *)value1Name {...}
-  [insert implementation of other methods here]
+  -(void)myCoolPublicMethod:(NSString *)value1Name {
+    // [code goes here]
+  }
 @end
 ```
 
@@ -37,30 +39,34 @@ MyClass.m
 Define the method signature in the `@interface` block of the implementation file (`.m`), then provide the implementation code in the `@implementation` block of the same file. Prefix with a dash (`-`), in parenthesis the return type, the name of the method, followed by a list of parameters and with their public name, type, and local-scope name.
 ```
 @interface MyClass()
-  -(void)myRadPrivateMethod:(NSString *)value1Name
+  -(void)myRadPrivateMethod:(NSString *)value1Name;
 @end
 
 @implementation
-  -(void)myRadPrivateMethod:(NSString *)value1Name {...}
+  -(void)myRadPrivateMethod:(NSString *)value1Name {
+    // [code goes here]
+  }
 @end
 ```
 
 #### Private properties
-TODO
+`@TODO`
 
 #### Public methods
 Define method signature in `@interface` block of the header file (`.h`), then provide the implementation code in the `@implementation` block of the implementation (`.m`) file. Prefix with a dash (`-`), in parenthesis the return type, the name of the method, followed by a list of parameters and with their public name, type, and local-scope name.
 ```
 @interface MyClass
-  -(void)myCoolPublicMethod:(NSString *)value1Name
+  -(void)myCoolPublicMethod:(NSString *)value1Name;
 @end
 ```
 
 ```
 @implementation
-  -(void)myCoolPublicMethod:(NSString *)value1Name {...}
+  -(void)myCoolPublicMethod:(NSString *)value1Name {
+    // [code goes here]
+  }
 @end
 ```
 
 #### Public properties
-TODO
+`@TODO`

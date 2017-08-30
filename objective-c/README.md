@@ -1,10 +1,10 @@
 ## Objective-C
 
-#### History
+### History
 Objective-C is regular C (literally) with additional symbols sprinkled on top to enhance the language. Apple Inc. backs the development of this language, but is phasing out in favor of the Swift language.
 
-#### Object-oriented bits
-###### Definitions
+### Object-oriented bits
+#### Defining classes
 Each class defined requires 2 files, a **header** file (`.h`) and an **implementation** file (`.h`).
 A few tips:
 * don't expose instance variables, create accessors instead.
@@ -33,7 +33,7 @@ MyClass.m
 @end
 ```
 
-###### Private methods
+#### Private methods
 Define the method signature in the `@interface` block of the implementation file (`.m`), then provide the implementation code in the `@implementation` block of the same file. Prefix with a dash (`-`), in parenthesis the return type, the name of the method, followed by a list of parameters and with their public name, type, and local-scope name.
 ```
 @interface MyClass()
@@ -45,10 +45,10 @@ Define the method signature in the `@interface` block of the implementation file
 @end
 ```
 
-###### Private properties
+#### Private properties
 TODO
 
-###### Public methods
+#### Public methods
 Define method signature in `@interface` block of the header file (`.h`), then provide the implementation code in the `@implementation` block of the implementation (`.m`) file. Prefix with a dash (`-`), in parenthesis the return type, the name of the method, followed by a list of parameters and with their public name, type, and local-scope name.
 ```
 @interface MyClass
@@ -62,5 +62,5 @@ Define method signature in `@interface` block of the header file (`.h`), then pr
 @end
 ```
 
-###### Public properties
+#### Public properties
 TODO

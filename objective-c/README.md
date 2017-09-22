@@ -3,7 +3,7 @@
 ### History
 Objective-C is regular C (literally) with additional symbols sprinkled on top to enhance the language. Apple Inc. backs the development of this language, but is phasing out in favor of the Swift language.
 
-### Object-oriented bits
+## Object-oriented bits
 #### Defining classes
 Each class defined requires 2 files, a **header** file (`.h`) and an **implementation** file (`.h`).
 A few tips:

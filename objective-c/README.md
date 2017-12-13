@@ -70,3 +70,14 @@ Define method signature in `@interface` block of the header file (`.h`), then pr
 
 #### Public properties
 `@TODO`
+
+#### Answers from more experienced developers
+
+* Q: Is it best practice to to check if this is nil before we crash elsewhere?
+A: Sending messages to nil objects doesn't cause a crash in objective-c, so nil-checking isn't as common in objc as some other languages. Passing nil as a param to certain methods can cause a crash, and normally nil-checking is done prior to those specific method calls. (@glebo)
+* Q: When it comes to core data, is it generally better to use the backgroundQueueContext instead of GCD directly?
+A: Yep, that way you can be sure that objects you fetch from that context are safe to use in the bg thread. (@glebo)
+
+### Special Thanks to my Mentors
+* Gleb Oleinik (@glebo)
+* Claudio Gomez (@claudiogomezGL)

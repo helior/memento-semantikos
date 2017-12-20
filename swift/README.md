@@ -1,23 +1,22 @@
-## Swift
+# Swift
 
-#### History
+## History
 Swift is an open-source compiled language created by Apple in 2014. It is referred to as a "protocol-oriented programming" language, supports multiple-paradigms, and is built with the open-source LLVM compiler.
 
 
-### Types
+## Types
 
-##### Value-types
+### Value-types
 * Structures: Strings, Characters, Booleans, Integers, Floating-point numbers, Arrays, Dictionaries
 * Enumerations: Optionals
 
-##### Reference-types
+### Reference-types
 * Functions
 * Classes
 * Closures
 
 
-
-### Basic Operators
+#### Basic Operators
 * Arithmetic ( `+` `-` `/` `*` `%` )
 * Comparisons ( `==` `!=` `>` `<` `>=` `<=` )
 * Ternary ( `x < y ? ifTrue : ifFalse` )
@@ -25,7 +24,7 @@ Swift is an open-source compiled language created by Apple in 2014. It is referr
 * Closed (inclusive) Range ( `1...5` )
 * Half-Open (non-inclusive) Range ( `1..<5` )
 
-### String interpolation
+#### String interpolation
 ```
 var firstName = "Helior"
 var fullName = "\(firstName) Colorado"
@@ -83,3 +82,26 @@ var multiDimentionalDictionary = [
 ]
 
 ```
+
+## Control-flow statements
+
+#### Optional binding
+`if let`, `if let...else`, `guard let...else` are the recommended way of unwrapping options, as opposed to force or implicit unwrapping. Remember that `if let` assigned variables only exists within this inner scope, while `guard let` assignments are available to the scope they're defined.
+
+### if let...
+From my observations, the `if let` pattern is for executing a block of code only when the expression of `if let x = y` yields a non-nil value, in conjunction with assigning the value to `x`.
+
+### guard let.. else
+Particularly useful for multiple validation checks while keeping code read-able
+
+### do...catch
+Arbitrary block of code, in which you can catch a thrown error within a specific scope [?]
+
+### defer
+Defer will execute in FILO (first, in last out) order at the end of the block they are defined in, regardless how the code block exits (return, break, error, etc.)
+
+## Class properties
+
+### Computed properties
+
+### didSet

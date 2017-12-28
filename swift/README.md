@@ -3,6 +3,8 @@
 ## History
 Swift is an open-source compiled language created by Apple in 2014. It is referred to as a "protocol-oriented programming" language, supports multiple-paradigms, and is built with the open-source LLVM compiler.
 
+## External resources
+https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AboutTheLanguageReference.html
 
 ## Types
 
@@ -105,3 +107,19 @@ Defer will execute in FILO (first, in last out) order at the end of the block th
 ### Computed properties
 
 ### didSet
+
+## Operational stuff
+
+#### Files to ignore in SCM
+Refer to [Github's Swift.gitignore](https://github.com/github/gitignore/blob/master/Swift.gitignore) for an exhaustive list.
+* `xcuserdata/`
+
+#### Dependency Management
+
+Libraries
+* https://cocoapods.org/
+* https://github.com/Carthage/Carthage
+* https://swift.org/package-manager/
+
+Discussion links:
+* https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control

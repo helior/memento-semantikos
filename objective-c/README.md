@@ -1,4 +1,4 @@
-## Objective-C
+# Objective-C
 
 ### History
 Objective-C is regular C (literally) with additional symbols sprinkled on top to enhance the language. Apple Inc. backs the development of this language, but is phasing out in favor of the Swift language.

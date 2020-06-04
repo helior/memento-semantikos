@@ -129,6 +129,8 @@ Defer will execute in FILO (first, in last out) order at the end of the block th
 ### didSet
 
 
+## ★ Extensions
+
 
 ## ★ Protocols
 ### Defining a protocol
